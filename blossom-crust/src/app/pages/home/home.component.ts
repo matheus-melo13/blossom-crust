@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from '../../components/header/header.component';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
-  selector: 'app-home',
-  imports: [],
+  selector: 'home-component',
+  standalone: true,
+  imports: [HeaderComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.scss']  // Corrigido para "styleUrls" (plural)
 })
 export class HomeComponent {
 
