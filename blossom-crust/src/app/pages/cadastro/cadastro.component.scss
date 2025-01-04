@@ -1,0 +1,134 @@
+.cadastros-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #ebbcce;
+}
+
+input {
+  background-color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 0.7rem;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebbcce;
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+}
+
+.logo {
+  max-width: 100%; 
+  height: 50px;    
+}
+
+h1{
+padding: 0;
+margin: 0;
+text-align: center;
+color: #5a0000;
+background-color: #ebbcce;
+}
+
+.titulos-cadastros{
+  display: flex;
+  justify-content: center;
+}
+.cadastros{
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebbcce;
+  gap: 10px;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+label {
+  font-weight: bold;
+  color: #5a0000;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+}
+
+button {
+  text-align: center;
+  line-height: inherit; 
+  background-color:#5a0000;
+  border-color: #5a0000;
+  border-radius: 10px;
+  color: #ebbcce;
+  padding: 10px;
+  margin: 8px 0;
+  width: 150px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.criar-conta{
+  display: flex;
+  align-items: left;
+  margin-left: 50px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #5a0000;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.welcome {
+  flex: 1; /* Ocupa o espaço disponível */
+}
+
+.imagem {
+  flex: 1; /* Ocupa o espaço disponível */
+  display: flex;
+  justify-content: center; /* Centraliza a imagem dentro da seção */
+  align-items: center; /* Alinha verticalmente a imagem */
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.welcome p {
+  font-size: 1rem;
+  color: #666;
+}
