@@ -1,0 +1,16 @@
+/* Estilo global paraaa o aplicativo */
+* {
+  // margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ebbcce;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
