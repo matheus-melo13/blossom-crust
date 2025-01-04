@@ -10,7 +10,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @RestController
@@ -29,13 +31,15 @@ public class PizzaController {
     }
 
     // Endpoint para buscar todas as pizzas
-    @GetMapping
-    public ResponseEntity<List<PizzaDTO>> getAllPizzas() {
+    @GetMapping("todas")
+    public ResponseEntity<Map<String, List<PizzaDTO>>> getAllPizzas() {
         List<Pizza> pizzas = pizzaService.getAllPizzas();
         List<PizzaDTO> pizzaDTOs = pizzas.stream()
                 .map(this::convertToDTO)
                 .collect(Collectors.toList());
-        return ResponseEntity.ok(pizzaDTOs);
+        Map<String, List<PizzaDTO>> pizzasMap = new HashMap<>();
+        pizzasMap.put("pizzas", pizzaDTOs);
+        return ResponseEntity.ok(pizzasMap);
     }
 
     // Endpoint para buscar uma pizza por ID
