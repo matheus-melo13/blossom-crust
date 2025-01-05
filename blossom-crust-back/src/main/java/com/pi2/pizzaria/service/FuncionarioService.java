@@ -17,6 +17,7 @@ public class FuncionarioService {
         this.funcionarioRepository = funcionarioRepository;
     }
 
+    
     public Funcionario saveFuncionario(Funcionario funcionario) {
         return funcionarioRepository.save(funcionario);
     }
