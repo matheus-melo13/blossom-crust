@@ -1,15 +1,15 @@
 package com.pi2.pizzaria.dto;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
-import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.*;
+import lombok.Data;
 
+@Data
 public class PizzaDTO {
 
     private Long id;
 
     @NotBlank(message = "O sabor da pizza não pode ser vazio")
+    @NotNull(message = "O sabor da pizza é obrigatório")
     @Size(max = 30, message = "O sabor da pizza deve ter no máximo 30 caracteres")
     private String sabor;
 
