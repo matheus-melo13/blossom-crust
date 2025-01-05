@@ -1,0 +1,28 @@
+<div class="cadastros-container">
+  <header-component></header-component>
+  <body>
+      <div class="titulos-cadastros">
+          <h1>Fazer Cadastro</h1>
+      </div>
+      <div class="cadastros">
+          <form [formGroup]="formRegistro">
+              <label for="nome">Nome Completo:</label>
+              <input formControlName="nome" type="text">
+          
+              <label for="endereco">Endereço:</label>
+              <input formControlName="endereco" type="text">
+          
+              <label for="dataNascimento">Data de Nascimento:</label> <!-- apagar o for, ver se o type é data msm -->
+              <input formControlName="dataNascimento" type="data">
+          
+              <label for="telefone">Telefone:</label>
+              <input formControlName="telefone" type="text">
+          
+              <label for="email">E-mail:</label>
+              <input formControlName="email" type="text">
+          
+              <button type="submit" (click)="fazerCadastro()">Cadastrar</button>
+          </form>
+      </div>
+  </body>
+</div>

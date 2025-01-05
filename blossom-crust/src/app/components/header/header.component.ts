@@ -10,5 +10,11 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class HeaderComponent {
   
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router
+  ) {}
+
+  navigateTo(path: string): void {
+    this.router.navigate([path]);
+  }
 }

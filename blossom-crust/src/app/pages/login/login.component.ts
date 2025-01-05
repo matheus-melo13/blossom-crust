@@ -5,7 +5,7 @@ import { HeaderComponent } from '../../components/header/header.component';
 @Component({
   selector: 'login-component',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, RouterModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']  // Corrigido para "styleUrls" (plural)
 })

@@ -1,19 +1,20 @@
 <div class="login-container">
   <header-component></header-component>
-  <h1>Fazer login</h1>
   <h2>Em qual área deseja entrar?</h2>
   <div class="container-primario">
       <div class="container">
           <div class="button-container">
-              <button class="btn-cliente">CLIENTE</button>
-              <button class="btn-funcionario">FUNCIONÁRIO</button>
+              <button class="btn-cliente" routerLink="cliente">CLIENTE</button>
+              <button class="btn-funcionario" routerLink="funcionario">FUNCIONÁRIO</button>
           </div>
           <div class="criar-conta">
-              <p class="conta">Ainda não possui uma conta? <a href="#">Crie uma aqui!</a></p>
+            <p class="conta">Ainda não possui uma conta?</p>
+            <button routerLink="cadastro">Crie uma aqui</button>
           </div>
       </div>
       <div class="imagem">
           <img src="assets/imagens/pizza.png" alt="pizza" class="imgfazerlogin">
       </div>
   </div>
+
 </div>
