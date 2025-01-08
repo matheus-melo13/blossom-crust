@@ -71,7 +71,8 @@ export default function () {
         });
 
         // ** 3. Atualizar pizza (PUT) **
-        const pizzaAtualizada = {
+        const pizzaAtualizada =
+            {
             sabor: `${novaPizza.sabor} Especial`,
             preco: novaPizza.preco + 5,
             descricao: `${novaPizza.descricao} - Atualizada!`,
