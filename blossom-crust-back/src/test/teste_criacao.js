@@ -3,10 +3,13 @@ import { check } from 'k6';
 
 // Configurações para o teste
 export const options = {
-    stages: [
-	//foram feitos com VUS de: 1, 25, 50, 100, 250, 500
-        { duration: '30s', target: 500 }, // 1 usuário por 30 segundos
-    ],
+    //foram feitos com VUS de: 1, 25, 50, 100, 250, 500
+    vus: 1000, // Número fixo de Virtual Users (fixo em 20, mas você pode alterar)
+    duration: '30s', // Duração total do teste
+    thresholds: {
+        // SLAs: Definir critérios de sucesso para o teste
+        http_req_duration: ['p(95)<300'], // 95% das requisições devem ser respondidas em menos de 300ms
+    },
 };
 
 export default function () {
