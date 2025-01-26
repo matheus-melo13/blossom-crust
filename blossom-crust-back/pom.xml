@@ -62,7 +62,19 @@
 <!--		<dependency>-->
 <!--			<groupId>org.springframework.boot</groupId>-->
 <!--			<artifactId>spring-boot-starter-validation</artifactId>-->
+<!--&lt;!&ndash;		</dependency>&ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>org.lightcouch</groupId>-->
+<!--			<artifactId>lightcouch</artifactId>-->
+<!--			<version>0.1.6</version>-->
 <!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.google.code.gson</groupId>-->
+<!--			<artifactId>gson</artifactId>-->
+<!--			<version>2.7</version> &lt;!&ndash; ou a versão mais recente &ndash;&gt;-->
+<!--		</dependency>-->
+
+
 	</dependencies>
 
 	<build>

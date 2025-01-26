@@ -50,4 +50,10 @@ public class PizzaService {
         }
         pizzaRepository.deleteById(id);
     }
+
+    public Double getPizzaPriceById(Long idPizza) {
+        Pizza pizza = pizzaRepository.findById(idPizza)
+                .orElseThrow(() -> new IllegalArgumentException("Pizza com ID " + idPizza + " não encontrada."));
+        return pizza.getPreco();
+    }
 }
