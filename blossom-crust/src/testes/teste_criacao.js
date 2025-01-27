@@ -4,7 +4,7 @@ import { check } from 'k6';
 // Configurações para o teste
 export const options = {
     //foram feitos com VUS de: 1, 25, 50, 100, 250, 500
-    vus: 1000, // Número fixo de Virtual Users (fixo em 20, mas você pode alterar)
+    vus: 25, // Número fixo de Virtual Users (fixo em 20, mas você pode alterar)
     duration: '30s', // Duração total do teste
     thresholds: {
         // SLAs: Definir critérios de sucesso para o teste

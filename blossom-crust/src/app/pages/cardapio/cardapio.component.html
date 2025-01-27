@@ -1,14 +1,15 @@
 <header-component></header-component>
 <h1>NOSSO CARDÁPIO</h1>
+<button>criar nova pizza</button> <!-- colocar um  *ngIf="" para funcionario-->
 <section>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div>
+    <ul>
+      <li *ngFor="let pizza of pizzas">
+        <img src="assets/imagens/pizza.png" alt="pizza" class="imgfazerlogin">
+        <h2>{{ pizza.sabor }}</h2>
+        <p>{{ pizza.descricao }}</p>
+        <h3>R${{ pizza.preco }},00</h3>
+      </li>
+    </ul>
+  </div>
 </section>
