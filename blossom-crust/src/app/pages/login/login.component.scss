@@ -52,10 +52,15 @@ nav a:hover {
 }
 
 .imagem {
-  flex: 1; /* Ocupa o espaço disponível */
   display: flex;
   justify-content: center; /* Centraliza a imagem dentro da seção */
   align-items: center; /* Alinha verticalmente a imagem */
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #5a0000; 
 }
 
 .welcome h1 {
@@ -66,4 +71,54 @@ nav a:hover {
 .welcome p {
   font-size: 1rem;
   color: #666;
+}
+
+.login-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #ebbcce;
+}
+
+.container-primario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centraliza os botões horizontalmente */
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #5a0000; /* Cor de fundo dos botões */
+  color: white; /* Cor do texto dos botões */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 200px; /* Largura dos botões */
+}
+
+button:hover {
+  background-color: #7a0000; /* Cor de fundo dos botões ao passar o mouse */
+}
+
+.imgfazerlogin {
+  width: 300px; /* Ajuste a largura conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
 }

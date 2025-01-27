@@ -5,6 +5,12 @@ section {
   flex-wrap: wrap;
 }
 
+h1 {
+  width: 100%;
+  text-align: center; 
+  color: #5a0000;
+}
+
 ul {
   display: flex;
   justify-content: center; /* Centraliza os itens horizontalmente */
