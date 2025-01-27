@@ -6,15 +6,8 @@
   background-color: #ebbcce;
 }
 
-header {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ebbcce;
-  border-bottom: 1px solid #ffffff;
-  width: 100%;
+h1 {
+  color: #5a0000; 
 }
 
 .logo {
@@ -59,11 +52,11 @@ nav a:hover {
 }
 
 .welcome h1 {
-  font-size: 2rem;
-  color: #333;
+  font-size: 3.5rem;
+  color: #5a0000; 
 }
 
 .welcome p {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1.2rem;
+  color: #bc6c73;
 }

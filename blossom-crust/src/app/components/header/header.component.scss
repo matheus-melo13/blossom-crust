@@ -1,0 +1,31 @@
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 20px; /* Espaçamento entre todos os elementos do header */
+  border-bottom: 2px solid white; /* Linha branca na parte inferior */
+}
+
+.logo {
+  width: 250px; /* Ajuste a largura conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+nav {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os botões */
+}
+
+button {
+  padding: 10px 20px;
+  border: none; /* Remove a borda dos botões */ 
+  color: white; /* Cor do texto do botão */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: 700;
+  &:hover {
+    color: #5a0000; 
+  }
+}
