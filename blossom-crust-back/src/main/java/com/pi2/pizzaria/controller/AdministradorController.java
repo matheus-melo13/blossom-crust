@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/administradores")
+@CrossOrigin(origins = "http://localhost:4200")
 public class AdministradorController {
 
     private final AdministradorService administradorService;

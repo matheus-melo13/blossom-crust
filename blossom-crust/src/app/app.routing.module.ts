@@ -4,6 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { FazerLoginComponent } from './components/fazer-login/fazer-login.component';
 import { CardapioComponent } from './pages/cardapio/cardapio.component';
+import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 
 export const routes: Route[] = [
   { path: '', component: HomeComponent },
@@ -13,5 +14,6 @@ export const routes: Route[] = [
   { path: 'login/cliente', component: FazerLoginComponent, data: {tipo: 'cliente'} },
   { path: 'login/funcionario', component: FazerLoginComponent, data: {tipo: 'funcionario'} },
   { path: 'cardapio', component: CardapioComponent },
+  { path: 'carrinho', component: CarrinhoComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }  // Rota padrão
 ];
